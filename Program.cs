@@ -2,7 +2,7 @@
 
 namespace _2
 {
-    class  Program
+    class Program
     {
         static int Main(string[] args)
         {
@@ -194,41 +194,50 @@ namespace _2
 
             //Start Part7
             //Methods.part_1();            //Methods.part_2();
-            Writer first = new Writer
-            {
-                name = "pencil",
-                price = 14000
-                ,company=new Company
-                {
-                    Address="Kashan",id=20
-                }
-            };
-            Writer second = new Writer
-            {
-                name = "pen",
-                price = 1000
-                ,company=new Company
-                { id=21,Address="Tehran"}
-            };
-            //second = first;//type1 copy
-            second = (Writer)first.Clone();
-            second.price = 58000;
-            second.company.id = 14;
+            /* Writer first = new Writer
+             {
+                 name = "pencil",
+                 price = 14000
+                 ,company=new Company
+                 {
+                     Address="Kashan",id=20
+                 }
+             };
+             Writer second = new Writer
+             {
+                 name = "pen",
+                 price = 1000
+                 ,company=new Company
+                 { id=21,Address="Tehran"}
+             };
+             //second = first;//type1 copy
+             second = (Writer)first.Clone();
+             second.price = 58000;
+             second.company.id = 14;
 
-            Point[] point = new []{new Point(14,10),new Point(12,11) ,new Point(3,2),new Point(12,24),new Point(13,7)};
-            Array.Sort(point);
-            for (int i = 0; i < point.Length; i++)
-                point[i].print();
+             Point[] point = new []{new Point(14,10),new Point(12,11) ,new Point(3,2),new Point(12,24),new Point(13,7)};
+             Array.Sort(point);
+             for (int i = 0; i < point.Length; i++)
+                 point[i].print();
+
+		
+             //    Methods.part7_3();
+             Methods.part7_4();*/
 
 
-            Methods.part7_3();
+
+
+
+
+            // Part8.main();
+            part9.main();
+            Console.ReadKey();
             return 0;
         }
-
-        static void print<T>(T x)
+        static void Print<T>(T x)
         {
             Console.WriteLine(x);
         }
     }
-   
+
 }

@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2_Class.cs" />
+    <Compile Include="Beginner.cs" />
+    <Compile Include="part8.cs" />
+    <Compile Include="part9.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

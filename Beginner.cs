@@ -103,8 +103,16 @@ static class Methods
         bit.Or(bit1);
         bit.And(bit1);
         printBits(bit);
-        bit.Or(new BitArray(new[]{false, true,true,true,false,true,true,true}));
+        bit.Or(new BitArray(new[] { false, true, true, true, false, true, true, true }));
         printBits(bit);
+    }
+    public static void part7_4()
+    {
+        System.Collections.Specialized.BitVector32 vector32 = new System.Collections.Specialized.BitVector32(1023);
+        vector32[8] = false;
+        Console.WriteLine(vector32);
+        int w = System.Collections.Specialized.BitVector32.CreateMask(7);
+        Console.WriteLine(w);
     }
     static void printBits(System.Collections.BitArray bit)
     {
@@ -113,6 +121,13 @@ static class Methods
             Console.Write(x ? 1 : 0);
         }
         Console.WriteLine();
+    }
+    public static void print<Ttpye>(Ttpye t, bool nextLine = true)
+    {
+        if (nextLine)
+            Console.WriteLine(t);
+        else
+            Console.Write(t);
     }
 }
 class Writer : System.ICloneable
@@ -166,3 +181,4 @@ class Point : System.IComparable
 }
 
 
+//Part8
