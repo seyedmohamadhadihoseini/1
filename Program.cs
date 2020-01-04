@@ -22,7 +22,7 @@ namespace _2
              {
                  Console.WriteLine(x);
              }
-             Console.WriteLine("I Love You Narges!\n");
+             Console.WriteLine("I Love You Seyed!\n");
              Console.WriteLine(Environment.OSVersion);
              Console.WriteLine(Environment.ProcessorCount);
              Console.WriteLine(Environment.Is64BitProcess);
@@ -31,8 +31,8 @@ namespace _2
              Console.WriteLine(Environment.UserName);
              Console.WriteLine("{0:e0}", 0.0016);
              int zx = 25;
-             string narges = "Narges";
-             string xn = $"You Are In My Heart For Ever {narges}! {zx}";
+             string Seyed = "Seyed";
+             string xn = $"You Are In My Heart For Ever {Seyed}! {zx}";
              Console.WriteLine(xn);
              Console.ReadKey();
              Console.Beep(700, 2000);
@@ -97,7 +97,7 @@ namespace _2
              print($"multyply={first * second}  division:{first / second}  plus:{first + second} Minus:{first - second}\n");*/
 
             //PART5
-            /*  string[] vs = { "Mohamadhadi", "Narges", "Zahra", "hoseini", "mohamadi" };
+            /*  string[] vs = { "Mohamadhadi", "Seyed", "Zahra", "hoseini", "mohamadi" };
               foreach (var x in vs)
                   print(x);
               string h = string.Join(" ", vs, 1, 3);
@@ -105,11 +105,11 @@ namespace _2
               int po;
               CharEnumerator charEnumerator;
               charEnumerator = h.GetEnumerator();
-              Console.WriteLine("Hello {0}", "narges");
+              Console.WriteLine("Hello {0}", "Seyed");
 
 
 
-              string mystr = "Seyed Mohamad Hadi Hoseini With her Wife Narges Mohamadi!";
+              string mystr = "Seyed Mohamad Hadi Hoseini With her Wife Seyed Mohamadi!";
               string my = "   Seyed Mohamad Hadi   ";
               string x1 = "1";
               string x2 = "21";
@@ -128,7 +128,7 @@ namespace _2
               print("\n\n");
               for (int i = 0; i < count; ++i)
               {
-                  x1 = x1.Replace(x1[i].ToString(), "I Love You Narges!");
+                  x1 = x1.Replace(x1[i].ToString(), "I Love You Seyed!");
               }
               print(x1);
 
@@ -155,16 +155,7 @@ namespace _2
               x1 = x1.Substring(2, 5);// to SubStr and dispart some of part of the string! the 5 is len and 2 is place start
               print(x1);
 
-              System.Text.StringBuilder builder = new System.Text.StringBuilder();//this very useFull For Memory
-              builder.Append("Narges");
-              builder.Append(" Sex ");
-              builder.Append(" with ");
-              builder.Append(" hadi ");
-              builder.AppendFormat($"very lovely {2} hour");
-              builder.AppendLine("");
-              builder = builder.Replace("hadi", "Zahra");
-              builder = builder.Replace("Narges", "MohamadHadi");
-              print(builder);
+              
 
               //jagged array
               int[,] Mark = new int[2, 3];
