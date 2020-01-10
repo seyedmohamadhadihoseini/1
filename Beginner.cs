@@ -159,6 +159,11 @@ class Company
 {
     public string Address { get; set; }
     public int id { get; set; }
+    public string Name { get; set; }
+    public override string ToString()
+    {
+        return $"Name:{Name}  Address:{Address}   Id:{id}";
+    }
 }
 class Point : System.IComparable
 {

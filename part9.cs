@@ -134,13 +134,13 @@ namespace _2
         {
             PersonCollection collection = new PersonCollection();
             collection.OnForAdd += Collection_OnForAdd;
-            collection.Add(new person { Address = "Jiroft", age = 19, name = "Narges" });
+            collection.Add(new person { Address = "Jiroft", age = 19, name = "Seyed" });
             collection.Add(new person { Address = "Kashan", age = 19, name = "Mohamad Hadi" });
             Console.WriteLine();
             Console.WriteLine(collection);
 
             collection.AddNotification += RemoveNotification;
-            collection.Remove(new person { Address = "Jiroft", age = 19, name = "Narges" });
+            collection.Remove(new person { Address = "Jiroft", age = 19, name = "Seyed" });
             Console.WriteLine();
             Console.WriteLine(collection);
         }
@@ -197,7 +197,7 @@ namespace _2
         {
             Func func = new Func();
             func.OnAdded += Func_OnAdded;
-            func.Add(new Point { x_Side = 4, y_Side = 5 }, "I Love You Narges!");
+            func.Add(new Point { x_Side = 4, y_Side = 5 }, "I Love You Seyed!");
         }
 
         private static void Func_OnAdded(object sender, PointEventArgs e)

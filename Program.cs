@@ -99,7 +99,7 @@ namespace _2
             //PART5
             /*  string[] vs = { "Mohamadhadi", "Seyed", "Zahra", "hoseini", "mohamadi" };
               foreach (var x in vs)
-                  print(x);
+                  print(x);`
               string h = string.Join(" ", vs, 1, 3);
               print(h);
               int po;
@@ -220,8 +220,11 @@ namespace _2
 
 
 
-            // Part8.main();
-            part9.main();
+             Part8.main();
+            //part9.main();
+            //Part10.main();
+            //part11.main();
+            //Part12.main();
             Console.ReadKey();
             return 0;
         }

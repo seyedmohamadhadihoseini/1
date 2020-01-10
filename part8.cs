@@ -18,9 +18,9 @@ namespace _2
             // f4();
             //f5();
             //f6();
-            //f7();
+            f7();
             //f8();
-            f9();
+            //f9();
         }
         static void f1()
         {
@@ -28,7 +28,7 @@ namespace _2
             first.Add("Hadi");
             first.Add(new Writer());
             first.Add(2.5);
-            first.Add(new Company());
+            first.Add(new Company { Address = "NewYork", id = 79, Name = "microsoft" });
             first.RemoveAt(1);
             foreach (var x in first)
                 Methods.print(x);
@@ -37,7 +37,7 @@ namespace _2
         {
             System.Collections.Stack stack = new Stack();
             stack.Push(1);
-            stack.Push("Narges!");
+            stack.Push("Seyed!");
             stack.Push('4');
             stack.Push(1.2);
             Methods.print(stack.Peek());
@@ -53,7 +53,7 @@ namespace _2
             stringCollection.Add("hello");
             stringCollection.Add(" world!");
             string x = stringCollection[0];
-            stringCollection[1] = "Narges";
+            stringCollection[1] = "Seyed";
             foreach (string item in stringCollection)
                 Methods.print(item, false);
         }
@@ -71,7 +71,7 @@ namespace _2
                 age = 20,
                 EyeColor = (MyColor)Enum.Parse(typeof(MyColor), "Brown")
                 ,
-                name = "Narges"
+                name = "Seyed"
             });
             foreach (Person item in person)
                 Methods.print(item);
@@ -115,9 +115,12 @@ namespace _2
             st.Push("Love");
             st.Push("You");
             st.Push("Narges");
-            st.Reverse();
+            var reversedlist = st.Reverse().ToList();
             while (st.Count != 0)
                 Methods.print(st.Pop(), false);
+            Console.Write("\nReversed list is:");
+            foreach (var item in reversedlist)
+                Console.Write(item + " ");
             System.Collections.Generic.Queue<int> qt = new Queue<int>(1);
             qt.Enqueue(2);
             qt.Enqueue(4);
@@ -133,20 +136,20 @@ namespace _2
         static void f6()
         {
             System.Collections.Generic.Dictionary<string, double> pairs = new Dictionary<string, double>();
-            pairs.Add("Narges", 20);
+            pairs.Add("Seyed", 20);
             pairs.Add("Mohamad Hadi", 20);
             pairs.Add("Hosein", 17);
             pairs.Add("Ali", 14);
             pairs["Reza"] = 23;
             KeyValuePair<string, double> keyValue = new KeyValuePair<string, double>("ahmad yoosofan", 45);
-            pairs.Append(keyValue);
-            foreach (var x in pairs)
+            var result = pairs.Append(keyValue);
+            foreach (var x in result)
                 Methods.print(x);
             Dictionary<string, int> keyValuePairs = new Dictionary<string, int>()
             {
                 ["Zahra"] = 20,
                 ["Mohamad"] = 19,
-                ["Narges"] = 19
+                ["Seyed"] = 19
             };
             Console.WriteLine();
             foreach (KeyValuePair<string, int> x in keyValuePairs)
@@ -160,7 +163,7 @@ namespace _2
         {
             new Person()
             {
-                name="Narges",age=20,EyeColor=(MyColor)Enum.Parse(typeof(MyColor),"Brown")
+                name="Seyed",age=20,EyeColor=(MyColor)Enum.Parse(typeof(MyColor),"Brown")
             },
             new Person{name="Mohamd Hadi",age=19,EyeColor=MyColor.Black},
             new Person{name="Zahra",age=22,EyeColor=MyColor.Brown}
@@ -182,7 +185,7 @@ namespace _2
             System.Collections.Generic.SortedSet<string> MyStr = new SortedSet<string>(new StringComparer());
             MyStr.Add("Naregs Mohamadi");
             MyStr.Add("Hadi Hoseini");
-            MyStr.Add("I Love You Narges!");
+            MyStr.Add("I Love You Seyed!");
             MyStr.Add("zahra mohamadi");
             foreach (string x in MyStr)
                 Methods.print(x);
@@ -261,14 +264,14 @@ namespace _2
             eventInt.Add(77);
             eventInt.Add(88);
             eventInt.RemoveAt(0);
-           
+
         }
 
 
 
         private static void EventInt_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
         {
-            Methods.print("I love You Narges!");
+            Methods.print("I love You Seyed!");
             Methods.print($"Sender is {sender}");
             if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Add)
             {
