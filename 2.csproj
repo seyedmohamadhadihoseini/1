@@ -52,6 +52,7 @@
     <Compile Include="Part10.cs" />
     <Compile Include="part11.cs" />
     <Compile Include="Part12.cs" />
+    <Compile Include="Part13.cs" />
     <Compile Include="part8.cs" />
     <Compile Include="part9.cs" />
     <Compile Include="Program.cs" />

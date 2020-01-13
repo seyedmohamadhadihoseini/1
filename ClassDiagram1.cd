@@ -86,14 +86,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="_2.ComputerExtention" Collapsed="true">
-    <Position X="2.25" Y="3" Width="1.5" />
+    <Position X="2.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
       <FileName>part11.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_2.part11">
-    <Position X="2.25" Y="4" Width="1.5" />
+  <Class Name="_2.part11" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
